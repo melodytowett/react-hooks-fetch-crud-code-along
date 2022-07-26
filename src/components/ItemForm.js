@@ -12,7 +12,7 @@ function ItemForm({onAddItem}) {
       isInCart:false,
     }
     console.log(itemData);
-    fetch("http://localhost:3000/items", {
+    fetch(`http://localhost:3000/items`, {
       method: "POST",
       headers: {
         "content-Type":"application/json"
